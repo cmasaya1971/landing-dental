@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Dental Las López</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido</a>
+    <header>
+        <nav>
+            <div class="container">
+                <h2>Clínica Dental Las López</h2>
+                <ul class="nav-links">
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Clínica Dental Las López</h1>
+                <p>Cuidamos tu sonrisa</p>
+                <button class="btn btn-primary">Reserva tu cita</button>
+            </div>
+        </section>
+        
+        <section id="servicios">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <div class="services-grid">
+                    <div class="card service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                        </div>
+                        <h3>Limpieza Dental</h3>
+                        <p>Mantén tu boca sana con nuestras limpiezas profesionales y revisiones preventivas.</p>
+                    </div>
+                    
+                    <div class="card service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <circle cx="9" cy="9" r="2"/>
+                                <path d="m21 15-3.086-3.086a2 2 0 0 0-1.414-.586H14l-3 3"/>
+                            </svg>
+                        </div>
+                        <h3>Ortodoncia</h3>
+                        <p>Corrige la posición de tus dientes con tratamientos modernos y efectivos.</p>
+                    </div>
+                    
+                    <div class="card service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                                <path d="M20 12v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-6"/>
+                                <path d="M4 12H2"/>
+                                <path d="M22 12h-2"/>
+                            </svg>
+                        </div>
+                        <h3>Implantes Dentales</h3>
+                        <p>Recupera tu sonrisa con implantes de última generación y resultados duraderos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="testimonios" aria-labelledby="tit-testimonios">
+            <div class="container">
+                <h2 id="tit-testimonios">Historias de nuestros pacientes</h2>
+                <div class="testimonials-grid">
+                    <figure class="card testimonial-card">
+                        <blockquote>
+                            "Excelente atención y profesionalismo. Me ayudaron a recuperar la confianza en mi sonrisa. El tratamiento fue cómodo y los resultados superaron mis expectativas."
+                        </blockquote>
+                        <figcaption>— María González, Ortodoncia</figcaption>
+                    </figure>
+                    
+                    <figure class="card testimonial-card">
+                        <blockquote>
+                            "El equipo es muy cálido y profesional. La limpieza fue perfecta y me explicaron todo el proceso. Definitivamente regresaré para mis citas regulares."
+                        </blockquote>
+                        <figcaption>— Carlos Hernández, Limpieza Dental</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contacto" aria-labelledby="tit-contacto">
+            <div class="container">
+                <h2 id="tit-contacto">Contacto</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="card info-card">
+                            <h3>Ubicación y Horarios</h3>
+                            <p><strong>Dirección:</strong><br>
+                            Av. Principal 123, Zona 10<br>
+                            Ciudad de Guatemala</p>
+                            
+                            <p><strong>Horarios:</strong><br>
+                            Lunes a Viernes: 8:00 - 18:00<br>
+                            Sábados: 8:00 - 14:00</p>
+                        </div>
+                        
+                        <div class="card info-card">
+                            <h3>Contacto Directo</h3>
+                            <p><strong>Teléfono:</strong><br>
+                            <a href="tel:+50255555555">+502 5555 5555</a></p>
+                            
+                            <a href="https://wa.me/50255555555?text=Hola%2C%20quisiera%20una%20cita" 
+                               class="btn btn-primary whatsapp-btn" target="_blank" rel="noopener">
+                                📱 WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulario provisional con mailto: solo para demo -->
+                    <div class="contact-form">
+                        <div class="card">
+                            <h3>Envíanos un mensaje</h3>
+                            <form method="post" action="mailto:info@clinica.com" enctype="text/plain">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" id="nombre" name="nombre" required 
+                                           autocomplete="name" aria-required="true">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required 
+                                           autocomplete="email" inputmode="email" aria-required="true">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="mensaje">Mensaje</label>
+                                    <textarea id="mensaje" name="mensaje" rows="4" required 
+                                              aria-required="true" placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clínica Dental Las López. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
