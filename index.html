@@ -10,9 +10,49 @@
     <meta property="og:title" content="Clínica Dental Sonrisas">
     <meta property="og:description" content="Cuidamos tu sonrisa con tecnología moderna y atención humana. Reserva tu cita hoy.">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/og-image.svg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
     
     <!-- Favicon -->
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Clínica Dental Sonrisas",
+        "description": "Cuidamos tu sonrisa con tecnología moderna y atención humana",
+        "telephone": "+502-5555-5555",
+        "url": "https://clinicasonrisas.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Principal 123",
+            "addressLocality": "Ciudad de Guatemala",
+            "addressRegion": "Zona 10",
+            "postalCode": "01010",
+            "addressCountry": "GT"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:00",
+                "closes": "14:00"
+            }
+        ],
+        "priceRange": "$$",
+        "image": "assets/og-image.svg"
+    }
+    </script>
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -131,11 +171,38 @@
                         </div>
                     </div>
                     
-                    <!-- Formulario provisional con mailto: solo para demo -->
+                    <!-- Mapa -->
+                    <div class="map-container">
+                        <div class="map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15459.766!2d-90.5069!3d14.6349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM4JzA1LjYiTiA5MMKwMzAnMjUuMCJX!5e0!3m2!1ses!2sgt!4v1234567890"
+                                width="600" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Ubicación de Clínica Dental Sonrisas en Guatemala">
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulario con Formspree -->
                     <div class="contact-form">
                         <div class="card">
                             <h3>Envíanos un mensaje</h3>
-                            <form method="post" action="mailto:info@clinica.com" enctype="text/plain">
+                            
+                            <!-- Mensaje de éxito (oculto por defecto) -->
+                            <div id="form-success" style="display: none; color: green; margin-bottom: 1rem;">
+                                ✅ Mensaje enviado correctamente. Te contactaremos pronto.
+                            </div>
+                            
+                            <!-- Mensaje de error (oculto por defecto) -->
+                            <div id="form-error" style="display: none; color: red; margin-bottom: 1rem;">
+                                ❌ Error al enviar el mensaje. Inténtalo de nuevo.
+                            </div>
+                            
+                            <form method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
                                 <div class="form-group">
                                     <label for="nombre">Nombre</label>
                                     <input type="text" id="nombre" name="nombre" required 

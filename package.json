@@ -1,0 +1,22 @@
+{
+  "name": "landing-dental",
+  "version": "1.0.0",
+  "description": "Landing page estática para la Clínica Dental Las López.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preview": "npx serve -p 52354 ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmasaya1971/landing-dental.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cmasaya1971/landing-dental/issues"
+  },
+  "homepage": "https://github.com/cmasaya1971/landing-dental#readme"
+}
